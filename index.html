@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeqrayd Tools</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/tools.css">
+</head>
+
+<body>
+
+  <!-- 上部メニュー -->
+  <nav class="tabs">
+    <button data-tab="encrypt">暗号化</button>
+    <button data-tab="decode">デコード</button>
+    <button data-tab="obfuscate">JS難読化</button>
+    <button data-tab="deobfuscate">難読化解除</button>
+  </nav>
+
+  <!-- コンテンツ領域 -->
+  <section id="encrypt" class="tab-content">
+    <h2>暗号化ツール</h2>
+    <textarea id="encrypt-input"></textarea>
+    <button id="encrypt-run">実行</button>
+    <textarea id="encrypt-output"></textarea>
+  </section>
+
+  <section id="decode" class="tab-content">
+    <h2>デコードツール</h2>
+    <textarea id="decode-input"></textarea>
+    <button id="decode-run">実行</button>
+    <textarea id="decode-output"></textarea>
+  </section>
+
+  <section id="obfuscate" class="tab-content">
+    <h2>JS難読化</h2>
+    <textarea id="obf-input"></textarea>
+    <button id="obf-run">実行</button>
+    <textarea id="obf-output"></textarea>
+  </section>
+
+  <section id="deobfuscate" class="tab-content">
+    <h2>難読化解除</h2>
+    <textarea id="deobf-input"></textarea>
+    <button id="deobf-run">実行</button>
+    <textarea id="deobf-output"></textarea>
+  </section>
+
+  <!-- JS -->
+  <script src="js/tabs.js"></script>
+  <script src="js/encrypt.js"></script>
+  <script src="js/decode.js"></script>
+  <script src="js/obfuscate.js"></script>
+  <script src="js/deobfuscate.js"></script>
+
+</body>
+</html>
