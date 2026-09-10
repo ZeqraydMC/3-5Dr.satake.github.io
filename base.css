@@ -1,0 +1,24 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: Consolas, monospace;
+  margin: 0;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  background: #111;
+  color: #0f0;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
